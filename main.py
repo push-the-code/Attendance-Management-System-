@@ -35,7 +35,8 @@ class Attendance (Details):
 
     def send_message (self):
         pwk.sendwhatmsg_instantly(self.phone, "Attendance Report:\n%s"%self.msg)
-        pag.press("enter")
+        for i in range(1):
+            pag.press('enter')
 
 
 adtc = Attendance()
