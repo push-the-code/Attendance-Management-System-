@@ -1,3 +1,8 @@
+'''
+you will have to install pywhatkit python package using cmd
+wih this command pip install pywhatkit
+Make sure python is added to the path (environment variables)
+'''
 import pywhatkit as pwk
 
 class Details:
