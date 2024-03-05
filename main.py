@@ -4,6 +4,7 @@ wih this command pip install pywhatkit
 Make sure python is added to the path (environment variables)
 '''
 import pywhatkit as pwk
+import pyautogui as pag
 
 class Details:
 
@@ -34,6 +35,7 @@ class Attendance (Details):
 
     def send_message (self):
         pwk.sendwhatmsg_instantly(self.phone, "Attendance Report:\n%s"%self.msg)
+        pag.press("enter")
 
 
 adtc = Attendance()
